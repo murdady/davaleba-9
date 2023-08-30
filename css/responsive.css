@@ -13,9 +13,9 @@
     }
 
     /* ARTICLE */
-article {
-    padding: 31px 67px;
-        margin: auto;        
+    article {
+        padding: 31px 67px;
+        margin: auto;
     }
 
     .traveltext {
@@ -26,17 +26,37 @@ article {
     .card3 {
         display: none;
     }
-  
+
+    /* SECTION2 */
+    .threecarddiv {
+
+        flex-direction: column;
+        gap: 20px
+    }
+
+    .smallcarddiv {
+
+        flex-direction: row;
+        gap: 20px;
+        margin-left: 0;
+    }
+
+    .photograph {
+        width: 100%;
+    }
+
+    .smallcard {
+        width: 48.5%;
+    }
 }
 
-@media (max-width: 610px){
-    /* Header  */
+@media (max-width: 590px) {
+
+    /* HEADER  */
     header {
         width: 120%;
         margin: auto;
         display: flex;
-        
-       
     }
 
     .leftheader {
@@ -56,7 +76,6 @@ article {
     }
 
     /* ARTICLE */
-
     article {
         display: flex;
         flex-direction: column;
@@ -64,42 +83,69 @@ article {
         align-items: center;
         margin: auto;
         width: 120%;
-
-        
     }
-    h1 { 
+
+    h1 {
         font-size: 40px;
-       
-
     }
+
     .traveltext {
         width: 100%;
     }
-    /* SECTION1 */
 
+    /* SECTION1 */
     .section1 {
         width: 100%;
         padding: 48px 10px;
-        margin-left: 60px;
-        
+        margin-left: 40px;
     }
 
-    
     .figurecontainer {
         display: flex;
         flex-wrap: wrap;
         gap: 18px;
         margin-top: 48px;
-    
     }
 
     figure {
-        display: flex;   
+        display: flex;
         flex-wrap: wrap;
         align-items: center;
         border: 1px solid #000;
         padding-bottom: 11px;
-    
+    }
+
+    /* SECTION2 */
+    .section2 {
+
+        margin: 50px;
+    }
+
+    .smallcarddiv {
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .smallcard {
+        margin-left: -50px;
+        width: 163.5%;
+        height: auto;
+    }
+
+    .photograph {
+        margin-left: -50px;
+        width: 163.5%;
+        align-items: center;
+
+    }
+
+    .happen {
+        width: 90%;
+    }
+
+    /* FOOTER */
+    footer {
+        max-width: 120%;
     }
 
 }
